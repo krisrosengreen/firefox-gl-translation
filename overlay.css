@@ -1,0 +1,18 @@
+.translation-overlay{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 169px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+    border-color: black;
+    background-color: white;
+    border-radius: 1px;
+    border-radius: 8px;
+    z-index: 100;
+    
+    transform: translateX(-50%);
+}

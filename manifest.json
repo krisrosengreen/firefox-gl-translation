@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "GL Translation",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "webRequest",
+    "*://*.nutserut.gl/*"
+  ],
+  "description": "Translates single greenlandic words with translator",
+  "content_scripts": [
+    {
+      "matches" : ["*://*.knr.gl/*"],
+      "js": ["injector.js"],
+      "css": ["overlay.css"]
+    }
+  ]
+}
+
