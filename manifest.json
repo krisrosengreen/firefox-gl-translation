@@ -3,15 +3,13 @@
   "name": "GL Translation",
   "version": "1.0",
   "permissions": [
-    "activeTab",
-    "webRequest",
     "*://*.nutserut.gl/*"
   ],
   "description": "Translates single greenlandic words with translator",
   "content_scripts": [
     {
-      "matches" : ["*://*.knr.gl/*"],
-      "js": ["injector.js"],
+      "matches" : ["*://*.knr.gl/kl/*", "*://*.sermitsiaq.ag/kl/*"],
+      "js": ["translator.js"],
       "css": ["overlay.css"]
     }
   ]
